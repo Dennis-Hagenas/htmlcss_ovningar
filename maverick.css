@@ -23,6 +23,7 @@ footer {
 }
 
 .descriptive_text {
+    color: darkslategrey;
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
@@ -31,7 +32,9 @@ footer {
 #rubrik {
     text-align: center;
 }
-
-#descImage img {
-        
+#inset {
+    text-align: center;
+}
+#descImage {
+        text-align: center;
 }
