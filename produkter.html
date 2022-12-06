@@ -6,59 +6,112 @@
 <meta name="author" content="Dennis Hagenäs">
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-<style>
-    a:link {
-      color: green;
-      background-color: transparent;
-      text-decoration: none;
-    }
-    
-    a:visited {
-      color: pink;
-      background-color: transparent;
-      text-decoration: none;
-    }
-    
-    a:hover {
-      color: red;
-      background-color:burlywood;
-      text-decoration: underline;
-    }
-    
-    a:active {
-      color: rgb(6, 139, 81);
-      background-color:aquamarine;
-      text-decoration: underline;
-    }
-    body {
-        background-color:rgb(203, 117, 60) ;
-    }
-    </style>
+<link rel="stylesheet" href="custom.css">
+
 
 <!-- Comment -->
 </head>
 <body>
-<div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a> </li>
+            
+            <li class="nav-item"><a class="nav-link" href="produkter.html">Products</a> </li>
+            
+            <li class="nav-item"><a class="nav-link" href="omoss.html">About</a> </li>
+        </ul>
+        </div>
+        </nav>
+        </header>
+<main class="main">
+
+
+
+
+
+<div class="container">
 
 <div class="row ms-4 mt-3 mb-5">
     <div class="col-4">
-        <img src="coffee.jpg" class="img-fluid rounded-3"> 
+        <img src="images/coffee.jpg" class="img-fluid rounded-3"> 
     </div>
     <div class="col-6 pt-4">
         <img src="https://via.placeholder.com/500x150/FF0000/FFFFFF?text=Cappucino+AB+Bra+kaffe+till+rätt+pris!" class="img-fluid p-3">
     </div>
 </div>
-<div class="row ms-4 me-5" style="background-color:darksalmon ;  ">
-    <div class="col-1 p-2"><a href="index.html">Index</a></div>
-    <div class="col-1 p-2 "><a href="produkter.html">Produkter</a></div>
-    <div class="col-1 p-2"><a href="omoss.html">Om oss</a></div>
+
+<div class="container">
+
+<div class="row gx-2 ">
+
+
+ <div class="col-md-4">
+<div class="card rounded mb-4 shadow-sm">
+    <img class="card-img-top" src="images/coffee-machine1.jpg">
+    <div class="card-body">
+        <h5 class="card-title">Coffe Maker 900</h5>
+        <p class="card-text">Our luxurious machine with many functions</p>
+    </div>
+    <div class="card-footer">
+        <a href="coffee900.html" class="btn btn-primary">View details</a>
+    </div>
+</div>
+</div>
+
+
+<div class="col-md-4">
+<div class="card rounded mb-4 shadow-sm">
+    <img class="card-img-top" src="images/coffee-machine2.jpg">
+    <div class="card-body">
+        <h5 class="card-title">Coffee Espress 340</h5>
+        <p class="card-text">Versatile machine for all demanding applications</p>
+    </div>
+    <div class="card-footer">
+        <a href="coffee340.html" class="btn btn-primary">View details</a>
+    </div>
+</div> 
+</div>    
+  
+
+
+<div class="col-md-4">
+    <div class="card rounded mb-4 shadow-sm">
+        <img class="card-img-top" src="images/coffee-machine3.jpg">
+        <div class="card-body">
+            <h5 class="card-title">Coffee Deluxe</h5>
+            <p class="card-text">A luxury machine with many functions</p>
+        </div>
+        <div class="card-footer">
+            <a href="coffee340.html" class="btn btn-primary">View details</a>
+        </div>
+    </div> 
+ </div>    
+    
+
+
+
+<div>
+    
+    
+</div>
+</div>
 
 </div>
-</div>
-    <div class="row m-4">
-        <div class="col-1 pe-3">Vilka är vi?
+
+
+<div class="container">
+
+    <h1 class="fw-bolder text-center">Kaffeparty
+        <small class="fw-normal fst-italic">Så gör du!</small>
+    </h1>
+    
+
+    <div class="row m-2">
+        <div class="col-2 ">Företag
         </div>
-        <div class="col-11">
+        <div class="col-10">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
@@ -70,11 +123,11 @@
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
      </div>
-     <div class="row m-4">
-        <div class="col-1 pe-3">
-        Vad gör vi?
+     <div class="row m-2">
+        <div class="col-2">
+        Privatpersoner
     </div>
-    <div class="col-11">
+    <div class="col-10">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
@@ -86,40 +139,13 @@
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
     </div>
-     <div class="row m-4">
-        <div class="col-1 pe-3">
-        Varför oss?
-    </div>
-        <div class="col-11">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-    </div>
-     <div class="row m-4">
-        <div class="col-1 pe-3">
-        Kaffeparty, så funkar det!
-    </div>
-    <div class="col-11">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-    </div>
+
+</div>
 </div>
 
+</main>
 <footer>
     (c) 2022 Dennis Hagenäs
 </footer>
