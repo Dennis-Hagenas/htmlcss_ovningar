@@ -1,0 +1,13 @@
+.bg_color {
+    background-color: darkseagreen;
+}
+
+
+.checked {
+    background-color: darkolivegreen;
+    text-decoration:line-through;
+}
+
+.unchecked {
+
+}
