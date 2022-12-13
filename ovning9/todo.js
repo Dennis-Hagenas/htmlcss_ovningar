@@ -3,9 +3,10 @@ let submit_btn = document.querySelector('#submit_btn');
 let undo_btn = document.querySelector('#undo_btn');
 let list_pos = document.querySelector('#listPos');
 
-function ListItem (checked, item, ){
+function ListItem (checked, item, enode){
     this.checked = checked;
     this.item = item;
+    this.elem = enode;
 } 
 
 let list = [];
@@ -13,26 +14,31 @@ let list = [];
 
 
 const populate_list = () => {
-let output = '';
+list_pos.innerHTML = '';
 list.forEach(element => {
-    output += `<div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" ${element.checked ? 'checked':''}>
+    let e = document.createElement('div');
+    e.setAttribute('class', 'form-check');
+    e.innerHTML  = `<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" ${element.checked ? 'checked':''}>
     <label class="form-check-label" for="flexCheckDefault">
       ${element.item}
-    </label>
-  </div>`});
-list_pos.innerHTML = output;
-let list_html = list_pos.querySelectorAll('div');
+    </label>`
+    element.enode = e;
+    list_pos.appendChild(e);
+    let c = e.querySelector('input');
 
-list_html.forEach(d => {
-    console.log();
-    c = d.querySelector('input');
-    console.log(c);
-    c.addEventListener('click', (e) =>  {
-        console.log(c);
+        c.addEventListener('click', () =>  {
+            
+            let c = element.enode.querySelector('input');
+            let g = element.enode.querySelector('label');
+            
+         if(c.checked) g.setAttribute('class', 'form-check-label checked');
+        else g.setAttribute('class', 'form-check-label');
+        element.checked = c.checked;       
     });
     
 });
+
+
 
 }
 
