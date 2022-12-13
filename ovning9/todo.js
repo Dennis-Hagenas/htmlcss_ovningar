@@ -3,7 +3,7 @@ let submit_btn = document.querySelector('#submit_btn');
 let undo_btn = document.querySelector('#undo_btn');
 let list_pos = document.querySelector('#listPos');
 
-function ListItem (checked, item){
+function ListItem (checked, item, ){
     this.checked = checked;
     this.item = item;
 } 
@@ -23,12 +23,17 @@ list.forEach(element => {
   </div>`});
 list_pos.innerHTML = output;
 let list_html = list_pos.querySelectorAll('div');
-console.log(list_html);
 
-/* list_html.forEach(hdiv => {
-    hdiv.addEventListener(e, function(e){
+list_html.forEach(d => {
+    console.log();
+    c = d.querySelector('input');
+    console.log(c);
+    c.addEventListener('click', (e) =>  {
+        console.log(c);
     });
-}); */
+    
+});
+
 }
 
 
